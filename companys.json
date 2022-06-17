@@ -1,9 +1,129 @@
 [{
         "name": "Disney",
-        "logo": "./logos/disney.png"
+        "logo": "data:image/png;base64,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"
     },
     {
         "name": "Apple",
-        "logo": "./logos/apple.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/1200px-Apple_Computer_Logo_rainbow.svg.png"
+    },
+    {
+        "name": "BMW",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm59xcwOC8YGhUYSl_SBWbRgV8XGf6zO814w&usqp=CAU"
+    },
+    {
+        "name": "NETFLIX",
+        "logo": "https://preview.redd.it/a74jxdosip871.png?width=640&crop=smart&auto=webp&s=12ecb8b9fc6e4ee6e8fb6185366df0fd85dfded9"
+    },
+    {
+        "name": "NIKE",
+        "logo": "https://img1.cgtrader.com/items/2442281/9f9d34ae83/large/nike-logo-07-3d-model-low-poly-max-obj-3ds-fbx-ma-stl.jpg"
+    },
+    {
+        "name": "Burger King",
+        "logo": "https://www.food-service.de/news/media/4/Burger-King-39711-detailp.jpeg"
+    },
+    {
+        "name": "CN",
+        "logo": "https://brandemia.org/contenido/subidas/2022/04/brandemia-cartoon-network-esteban-zamora-rediseno-2022-1-scaled.jpg"
+    },
+    {
+        "name": "Coca Cola",
+        "logo": "https://cdn.shopify.com/s/files/1/0260/9538/6669/products/179384_main_1200x1200.jpg?v=1638394592"
+    },
+    {
+        "name": "Doritos",
+        "logo": "https://creativityawards.com/wp-content/uploads/2020/03/Doritos-Rainbow-3.0-Mexico-07.jpg"
+    },
+    {
+        "name": "H & M",
+        "logo": "https://c8.alamy.com/comp/W1T6XG/hm-store-logo-is-being-decorated-with-rainbow-coloursmany-retail-stores-in-the-capitals-shopping-heartland-of-the-west-end-are-currently-decorated-in-rainbow-colours-supporting-pride-an-annual-celebration-of-the-lgbt-community-pride-culminates-in-the-lgbt-pride-parade-in-london-attracting-many-thousands-of-visitors-to-the-capital-with-a-colourful-vibrant-and-eccentric-procession-through-the-city-W1T6XG.jpg"
+    },
+    {
+        "name": "NIVEA",
+        "logo": "https://i.ebayimg.com/images/g/8FMAAOSwufBe9XJc/s-l400.jpg"
+    },
+    {
+        "name": "Nutella",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpMFaO7-zr0Dy6jC2zTDKIDXSL9Zo-uHZwx05s8-OoxpbCzUFUTbeKsGp3D7Aia3VtKyk&usqp=CAU"
+    },
+    {
+        "name": "PicsArt",
+        "logo": "https://i.pinimg.com/564x/8b/71/67/8b7167d0ce7f303e48ad820c23064216.jpg"
+    },
+    {
+        "name": "Vaseline",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEw_j72NDRwojPSOW8b5O1SB_zUsKLHgI05wRlZBaNZIO4RbYcANrXPcxCVl3GfhjRsAM&usqp=CAU"
+    },
+    {
+        "name": "WhatsApp",
+        "logo": "https://i.pinimg.com/originals/65/4a/f1/654af1ceefaa25f79eb8e0d0d859895f.jpg"
+    },
+    {
+        "name": "Bath & body",
+        "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIshZdll2uYv0lSNCKlXX8Ci8Y-k2qxkDkMokdFB-TeTPSnj3CWhCsS8F8g5QGgWrhySkAi4AjY79GTuD0pGAdkGqgfmnVsmZVs7Gb8z2WVADbhT0cs02IMOPrnacfCwzs0bBlZI_yNcYOe1tcdFd0ewhFfbcG6SwJonE9-ETWzX05m-Y3qm1Xfhxwkg/s612/279929190_7367112080028131_1354442948083448431_n.jpg"
+    },
+    {
+        "name": "Pinters",
+        "logo": "https://i.pinimg.com/736x/e8/95/91/e8959112c9700403c460b49fddd41e0b.jpg"
+    },
+    {
+        "name": "Google",
+        "logo": "https://media.tenor.com/images/a11cb7a2760fbf7647293191a4cc440a/tenor.png"
+    },
+    {
+        "name": "Microsoft",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVVC9R02XC13BEVta6Nt2flz0Cqjukqha0Hg&usqp=CAU"
+    },
+    {
+        "name": "GUESS",
+        "logo": "https://i.pinimg.com/236x/c7/44/fc/c744fc4fc1d6ff819124271cc69983da.jpg"
+    },
+    {
+        "name": "PUMA",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmraNEJ5yRCA8VOIpNtVnPiruN3t_RqJ0jTh3u6y0Ceh2TK1dKrKLlH5UIgU0eVfHnjw&usqp=CAU"
+    },
+    {
+        "name": "adidas",
+        "logo": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/38c6a1dd-4588-425f-ac07-1916a0fb94c8/d21qkhp-d7ee036e-c458-4afd-8b06-89d1316b4402.jpg/v1/fill/w_482,h_411,q_75,strp/vibrant_adidas_logo_by_mjcn17_d21qkhp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDExIiwicGF0aCI6IlwvZlwvMzhjNmExZGQtNDU4OC00MjVmLWFjMDctMTkxNmEwZmI5NGM4XC9kMjFxa2hwLWQ3ZWUwMzZlLWM0NTgtNGFmZC04YjA2LTg5ZDEzMTZiNDQwMi5qcGciLCJ3aWR0aCI6Ijw9NDgyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.9DNGrsZYSx_q58_ZqxyRzL0dNfCxCG-09-AcBPepx94"
+    },
+    {
+        "name": "starbucks",
+        "logo": "http://www.lesbian.com/wp-content/uploads/starbucks2.jpg"
+    },
+    {
+        "name": "DKNY",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUp1BJrOdnJBCwNAgHOTOyKyGuvezuRRwDRA&usqp=CAU"
+    },
+    {
+        "name": "IKEA",
+        "logo": "https://freight.cargo.site/w/549/i/77cdea414d1d0ade0208085cf332bf2e553588aef62ed0e2ccb7fbdc2d3bfbf1/Ikea-pride-flag-thumb.jpg"
+    },
+    {
+        "name": "ZARA",
+        "logo": "https://i.ebayimg.com/images/g/fgoAAOSwyd9iOGsd/s-l500.jpg"
+    },
+    {
+        "name": "COS",
+        "logo": "https://pbs.twimg.com/media/EzXmzytVcAYZ57G.jpg:large"
+    },
+    {
+        "name": "Ugg",
+        "logo": "https://www.ugg.com/dw/image/v2/BDJD_PRD/on/demandware.static/-/Sites-UGG-NA-master/default/dw44d71096/images/transparent/1120002-RSTR_1.jpg?sw=414&sfrm=png&q=0&bgcolor=FFFFFF"
+    },
+    {
+        "name": "Fossil",
+        "logo": "https://cf.shopee.ph/file/59a87af2c8d1c21ec8e660ed7c8cd68e"
+    },
+    {
+        "name": "Youtube",
+        "logo": "https://i.pinimg.com/originals/c9/6b/7c/c96b7ccd060dd589234058d0c96ef21b.png"
+    },
+    {
+        "name": "Pottery Barn",
+        "logo": "https://www.rainbowspottery.com/uploads/b/aa4acbf3b04c1b34986ce28d51cd625a50dbed5ebff37707dcd6565b10d724c4/rainbows%20logo_1613757736.jpeg"
+    },
+    {
+        "name": "Coach ",
+        "logo": "https://images.coltortiboutique.com/media/catalog/product/cache/c98761e6e52d19799d991277e4cad4fb/t/o/tote-bags_coach_misto_202790abs000002-l38-3.jpg"
     }
 ]
