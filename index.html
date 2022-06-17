@@ -21,6 +21,12 @@
         </div>
     </nav>
 
+    <div class="col-11 m-auto text-center alert alert-warning mt-4 mb-5">
+        There are a lot of other companies still not added yet, feel free to edit the "companies.json" file to add more
+        companies then send push to the github repository.
+        <a href="https://github.com/M-R-Elgendy/rs">here</a>
+    </div>
+
     <div class="col-md-11 col-sm-12 m-auto mt-5 p-3">
 
         <table id="myTable" class="display">
@@ -45,7 +51,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script>
-        $.getJSON("companys.json", function (data) {
+        $.getJSON("companies.json", function (data) {
             var tbl_body = "";
             var odd_even = false;
             $.each(data, function () {
