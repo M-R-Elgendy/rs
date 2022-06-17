@@ -1,0 +1,9 @@
+[{
+        "name": "Disney",
+        "logo": "./logos/disney.png"
+    },
+    {
+        "name": "Apple",
+        "logo": "./logos/apple.png"
+    }
+]

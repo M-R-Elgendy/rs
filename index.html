@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rainbow supporter checker</title>
+    <link rel="icon" href="./logos/ico.jfif">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <div class="container-fluid  text-center">
+            <a class="navbar-brand m-auto" href="#">
+                Is this company support rainbows?
+            </a>
+        </div>
+    </nav>
+
+    <div class="col-md-11 col-sm-12 m-auto mt-5 p-3">
+
+        <table id="myTable" class="display">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Logo</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer class="footer col-11 m-auto text-center alert alert-danger mt-4">
+        Boycott those who promote homosexuality and save your children
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $.getJSON("companys.json", function (data) {
+            var tbl_body = "";
+            var odd_even = false;
+            $.each(data, function () {
+                var tbl_row = "";
+                $.each(this, function (k, v) {
+                    if (k == "logo") {
+                        tbl_row += "<td><img src='" + v + "' width='80' height='80'></td>";
+                    } else {
+                        tbl_row += "<td>" + v + "</td>";
+                    }
+                });
+                tbl_body += "<tr class=\"" + (odd_even ? "odd" : "even") + "\">" + tbl_row + "</tr>";
+                odd_even = !odd_even;
+            });
+            $("#myTable tbody").html(tbl_body);
+        });
+
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+</body>
+
+</html>
