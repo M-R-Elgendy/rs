@@ -23,8 +23,8 @@
 
     <div class="col-11 m-auto text-center alert alert-warning mt-4 mb-5">
         There are a lot of other companies still not added yet, feel free to edit the "companies.json" file to add more
-        companies then send push to the github repository.
-        <a href="https://github.com/M-R-Elgendy/rs">here</a>
+        companies
+        <a href="https://github.com/M-R-Elgendy/rs" target="_blank">here</a>
     </div>
 
     <div class="col-md-11 col-sm-12 m-auto mt-5 p-3">
@@ -75,7 +75,9 @@
 
         $(document).ready(function () {
             callData();
-            $('#myTable').DataTable();
+            setTimeout(function () {
+                $('#myTable').DataTable();
+            }, 2000);
         });
     </script>
 
